@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NoteContext from "./NoteContext";
 
 function NoteState(props) {
-  const host = "/.netlify/functions"
+  const host = "/.netlify/functions/index"
   const notesinitial = []
   const [notes, setnotes] = useState(notesinitial)
 

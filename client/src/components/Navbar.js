@@ -3,7 +3,7 @@ import {Link, useLocation, useHistory} from "react-router-dom";
 import NoteContext from '../context/notes/NoteContext'
 
 function Navbar(props) {
-    const host = "/.netlify/functions"
+    const host = "/.netlify/functions/index"
     const ref = useRef(null)
     const context = useContext(NoteContext)
     const { deleteallnote } = context

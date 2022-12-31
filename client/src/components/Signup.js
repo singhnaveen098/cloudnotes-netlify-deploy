@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 function Signup(props) {
-  const host = "/.netlify/functions";
+  const host = "/.netlify/functions/index";
   const [cred, setcred] = useState({
     name: "",
     email: "",

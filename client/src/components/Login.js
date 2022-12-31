@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 function Login(props) {
-    const host = '/.netlify/functions'
+    const host = '/.netlify/functions/index'
     const [cred, setcred] = useState({ email: "", password: "" })
     let history = useHistory()
     const onchange = (e) => {

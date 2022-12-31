@@ -11,8 +11,8 @@ app.use(cors())
 app.use(express.json())
 
 //available routes
-app.use('/.netlify/functions/api/auth', require('./routes/auth'))
-app.use('/.netlify/functions/api/notes', require('./routes/notes'))
+app.use('/.netlify/functions/index/api/auth', require('./routes/auth'))
+app.use('/.netlify/functions/index/api/notes', require('./routes/notes'))
 
 module.exports = app;
 module.exports.handler = serverless(app);
